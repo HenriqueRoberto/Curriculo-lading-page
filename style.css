@@ -1,0 +1,539 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* =========================
+     Base / Background
+  ========================= */
+  --color-bg-primary: #000;
+  --color-bg-secondary: #1c1c1ce6;
+
+  --color-bg-dark-gray: #222223e6;
+
+  /* =========================
+     Brand – Rosa / Roxo Neon
+  ========================= */
+  --color-pink-neon: #e70e98;
+  --color-pink-magenta: #ff4fd8;
+
+  --color-purple-neon: #7a3cff;
+  --color-lilac-neon: #b06cff;
+
+  /* =========================
+     Azul (opção alternativa)
+  ========================= */
+  --color-blue-dark: #0a1025;
+  --color-blue-petrol: #0e1a3a;
+  --color-blue-accent: #2f6bff;
+
+  /* =========================
+     Cinzas (UI / Texto)
+  ========================= */
+  --color-gray-medium: #2a2a3d;
+  --color-gray-light: #b8b8d1;
+
+  /* =========================
+     Texto
+  ========================= */
+  --text-primary: #ffffff;
+  --text-secondary: #b8b8d1;
+
+  /* =========================
+     Estados / Efeitos
+  ========================= */
+  --shadow-pink-glow: 0 0 12px rgba(255, 47, 179, 0.6);
+  --shadow-purple: 6px 3px 8px 0px #b06cff45;
+  --shadow-grey: 19px 20px 20px #100f0f;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  /* background-color: var(--color-bg-gray); */
+  background-image: url(images/bg-body.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  line-height: 1.6;
+  color: var(--text-primary);
+}
+
+.container {
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+
+.layout {
+  width: 75%;
+  background-color: var(--color-bg-primary);
+  margin: 2rem auto;
+  box-shadow: var(--shadow-grey);
+}
+
+section {
+  scroll-margin-top: 80px; /* altura do header */
+}
+
+.title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Título genérico com borda */
+.title-bordered {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid var(--color-pink-neon);
+  color: var(--color-pink-neon);
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  padding: 1.5rem 0;
+  z-index: 10;
+  background-color: var(--color-bg-primary);
+}
+
+/* Navigation Bar Styles */
+nav {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav a {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  color: var(--color-pink-neon);
+}
+
+/* Main content styles */
+
+/* Home */
+.home {
+  min-height: 85vh;
+  display: grid;
+  align-items: center;
+  box-shadow: inset 0 -9px 12px -11px var(--color-purple-neon),
+    inset 0 -35px 25px -27px var(--color-pink-neon);
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Imagem */
+.home-image {
+  flex: 0 0 40%;
+}
+
+.home-image img {
+  width: 600px;
+  display: block;
+}
+
+.subtitle {
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  color: var(--color-pink-magenta);
+}
+
+.home-title {
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin-bottom: 1.5rem;
+  line-height: 1;
+}
+
+.contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.icon {
+  font-size: 20px;
+  color: var(--color-pink-magenta);
+}
+
+/* About */
+.about {
+  background-color: var(--color-bg-secondary);
+  padding: 3rem 0;
+}
+
+.about-content h2 {
+  text-align: center;
+}
+
+.about-content p {
+  text-indent: 2rem;
+  text-align: justify;
+}
+
+.formacao h3 {
+  margin: 1rem 0;
+}
+
+.formacao ul {
+  padding: 0 3rem;
+}
+
+/* Skills */
+.skills {
+  padding: 4rem 0;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 5rem;
+  align-items: flex-start;
+  margin-top: 3rem;
+}
+
+.skills-column h3 {
+  color: var(--color-lilac-neon);
+  margin-bottom: 1.5rem;
+  font-size: 22px;
+}
+
+.skills-column ul {
+  list-style: none;
+  padding: 0 0 0 1rem;
+}
+
+.skills-column li {
+  margin-bottom: 10px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.skills-column strong {
+  color: var(--text-primary);
+}
+
+.skills-divider {
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--color-purple-neon),
+    transparent
+  );
+}
+
+/* Projects */
+
+.projects {
+  padding: 4rem 0;
+  background-color: var(--color-bg-secondary);
+}
+
+.projects-board {
+  display: flex;
+  gap: 2rem;
+  padding: 3rem;
+  margin-top: 3rem;
+  background-color: #0000005b;
+}
+
+/* Card */
+.project-card {
+  flex: 1;
+  background-color: var(--color-bg-dark-gray);
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-purple);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Conteúdo */
+
+.project-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-info h3 {
+  color: var(--color-lilac-neon);
+  margin-bottom: 0.75rem;
+}
+
+.project-info p {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+/* Link */
+.project-link {
+  align-self: flex-start;
+  text-decoration: none;
+  color: var(--color-pink-neon);
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.project-link:hover {
+  border-color: var(--color-pink-neon);
+}
+
+/* Footer */
+.footer {
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--color-gray-medium);
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer p {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+/* Responsividade */
+
+@media (min-width: 1440px) {
+  .layout {
+    width: 65%;
+  }
+
+  .home-image img {
+    width: 700px;
+  }
+}
+
+/* notebooks */
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .home-image img {
+    max-width: 500px;
+  }
+  .project-card {
+    height: 300px;
+  }
+
+  .project-info p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .layout {
+    width: 90%;
+  }
+
+  .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .home-content {
+    gap: 3rem;
+  }
+
+  .home-image img {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 52px;
+  }
+
+  .projects-board {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .project-card {
+    flex: 0 0 calc(50% - 1rem);
+  }
+}
+
+/* tablets e celulares */
+
+@media (max-width: 768px) {
+  /* Layout geral */
+  .layout {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* Header / Nav */
+  header {
+    padding-top: 1.5rem;
+    text-align: center;
+  }
+
+  .nav-list {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* HOME */
+  .home {
+    min-height: auto;
+    padding: 4rem 0;
+  }
+
+  .home-content {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .home-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact li {
+    justify-content: center;
+  }
+
+  .home-image {
+    margin-top: 2.5rem;
+  }
+
+  .home-image img {
+    max-width: 260px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* SOBRE */
+  .about-content {
+    text-align: center;
+  }
+
+  .about-content p {
+    text-indent: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+
+  .formacao h3 {
+    font-size: 1.5rem;
+  }
+  .formacao ul {
+    padding: 0 3rem;
+  }
+
+  .formacao li {
+    padding: 1rem 0;
+  }
+
+  /* SKILLS */
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .skills-divider {
+    display: none;
+  }
+
+  .skills-column ul {
+    padding: 0;
+  }
+
+  /* PROJECTS */
+  .projects {
+    padding: 3rem 0;
+  }
+
+  .projects-board {
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 2rem;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .project-info {
+    text-align: center;
+  }
+
+  .project-link {
+    align-self: center;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 1rem 0;
+  }
+
+  .footer-content {
+    text-align: center;
+  }
+
+  .footer p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+  .container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-list {
+    font-size: 1rem;
+    padding: 0;
+  }
+}
