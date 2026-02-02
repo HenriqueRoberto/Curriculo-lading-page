@@ -21,3 +21,5 @@ Bem-vindo à minha **landing page de currículo**, desenvolvida com foco em fron
 - **About:** Seção sobre mim, formação acadêmica e trajetória.
 - **Skills:** Hard e soft skills organizadas em colunas.
 - **Projects:** Portfólio com cards de projetos desenvolvid
+
+![Screenshot](images/screenshot.png)
