@@ -1,4 +1,4 @@
-# Currículo Landing Page - Henrique Roberto dos Santos
+# Currículo Landing Page
 
 Bem-vindo à minha **landing page de currículo**, desenvolvida com foco em front-end e responsivo. Este projeto serve como uma das tarefas Acelera ZG 2026/1.
 
